@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<form action="/my_view/" method="post">
+		{% csrf_token %}
+	  <div class="form-group">
+	    <label for="email">Email address:</label>
+	    <input type="text" class="form-control" id="email" name="email">
+	    <label for="email">name</label>
+	    <input type="text" class="form-control" id="name" name="name">
+	  </div>
+	  
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</body>
+</html>
